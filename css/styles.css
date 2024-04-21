@@ -415,7 +415,7 @@ display: none;
 }
 
 .team-container {
- /* width: 296px; */
+ width: 296px;
 }
 
 
@@ -554,10 +554,22 @@ display: none;
 .footer-container{
   display: flex;
   /* align-items: baseline; */
-  text-align: center;
-  justify-content: center;
-  flex-direction: column;
+  /* text-align: center;
+  flex-direction: column; */
 }
+
+@media screen and (max-width: 767px){
+  .footer-container {
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .social-media-text {
+    margin-top: 72px;
+  }
+}
+ 
 
 .footer-container-logo{
   display: block;
@@ -605,7 +617,6 @@ display: none;
   letter-spacing: 0.02em;
   color: #fff;
   margin-bottom: 16px;
-  margin-top: 72px;
 }
 
 .footer-icon-list {
@@ -964,6 +975,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   .container{
     max-width: 768px;
   }
+  
 
   /*---------header---------*/
 
@@ -1144,26 +1156,12 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     flex-direction: row;
     flex-wrap: wrap;
     width: 584px;
-}
-
-.footer-container-logo {
-  margin-right: 24px;
-}
-
-.logo-footer {
-  text-align: left;
-}
+    text-align: left;
+  }
 
 .footer-form {
-  display: flex;
   flex-direction: row;
-}
-
- .footer-form-title{
-  text-align: left;
- }
-
-
+  }
 
 }
 
@@ -1181,7 +1179,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   /*---------header---------*/
 
-  .logo{
+  .logo {
     margin-right: 76px;
   }
 
@@ -1304,9 +1302,49 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: calc((100% - 3 * 24px) / 3)
 }
 
+/*---------footer---------*/
 
+.footer {
+  padding: 100px 0;
+}
 
+.footer-container {
+  width: 100%;
+  flex-wrap: nowrap;
+  align-items: baseline;
 
+}
+
+.footer-container-logo {
+  margin-right: 120px;
+}
+
+.logo-footer{
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.footer-text {
+  width: 264px;
+
+}
+
+.footer-icon-list{
+  width: 208px;
+}
+
+.footer-icon-link:hover, 
+.footer-icon-link:focus {
+  background-color: #31d0aa;
+}
+
+.footer-form-cover{
+  margin-left: 80px;
+}
+
+.footer-form-btn:hover {
+  background-color: #404bbf;
+}
 
 }
 
